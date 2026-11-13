@@ -453,7 +453,7 @@ function initContactForm() {
         alertBox.innerHTML = `
           <strong>Thank you!</strong> Your project inquiry has been received. Our senior project surveyor will contact you within 24 hours to arrange your free site survey.
           <br><br>
-          For urgent requests, please contact our director directly at <a href="tel:+447931931035" style="color:#c5a059;font-weight:700;">+44 7931 931035</a>.
+          For urgent requests, please contact our director directly at <a href="tel:+447931931035" style="color:var(--accent-gold);font-weight:700;">+44 7931 931035</a>.
         `;
       }
       form.reset();
@@ -470,6 +470,7 @@ function initContactForm() {
    ========================================================================== */
 function initNavbarScroll() {
   const header = document.querySelector('.site-header');
+  if (!header) return;
   window.addEventListener('scroll', () => {
     if (window.scrollY > 40) {
       header.classList.add('scrolled');
@@ -485,15 +486,38 @@ function initMobileMenu() {
 
   if (!toggleBtn || !mainNav) return;
 
-  toggleBtn.addEventListener('click', () => {
-    mainNav.classList.toggle('mobile-active');
+  toggleBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isActive = mainNav.classList.toggle('mobile-active');
+    toggleBtn.classList.toggle('is-active', isActive);
+    toggleBtn.setAttribute('aria-expanded', isActive ? 'true' : 'false');
   });
 
-  // Close mobile menu when clicking nav links
-  document.querySelectorAll('.nav-link').forEach(link => {
+  // Close mobile menu when clicking nav links or drawer action buttons
+  mainNav.querySelectorAll('.nav-link, .drawer-btn-quote, .drawer-btn-call, .drawer-btn-wa').forEach(link => {
     link.addEventListener('click', () => {
       mainNav.classList.remove('mobile-active');
+      toggleBtn.classList.remove('is-active');
+      toggleBtn.setAttribute('aria-expanded', 'false');
     });
+  });
+
+  // Close when clicking outside of navbar
+  document.addEventListener('click', (e) => {
+    if (mainNav.classList.contains('mobile-active') && !mainNav.contains(e.target) && !toggleBtn.contains(e.target)) {
+      mainNav.classList.remove('mobile-active');
+      toggleBtn.classList.remove('is-active');
+      toggleBtn.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && mainNav.classList.contains('mobile-active')) {
+      mainNav.classList.remove('mobile-active');
+      toggleBtn.classList.remove('is-active');
+      toggleBtn.setAttribute('aria-expanded', 'false');
+    }
   });
 }
 

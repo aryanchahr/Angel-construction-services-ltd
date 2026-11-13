@@ -1,0 +1,21 @@
+# Large archives and zips (GitHub blocks >100MB files)
+*.zip
+*.rar
+*.tar.gz
+
+# Redundant raw downloaded folders
+drive-download-20261111T221937Z-1-001/
+images/
+
+# Local utility scripts
+*.ps1
+organize-projects.js
+
+# Node
+node_modules/
+npm-debug.log*
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
