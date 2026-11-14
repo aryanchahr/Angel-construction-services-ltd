@@ -36,7 +36,7 @@ window.ANGEL_PROJECTS = [
       "High-performance natural slate hipped roof with lead flashing and gutters",
       "Eco-friendly Samsung air-source heat pump installation with underfloor heating",
       "Designer anthracite matt kitchen with quartz marble worktops & Bosch ovens",
-      "Solid oak interior doors with brushed stainless steel architectural handles",
+      "Solid oak interior doors with brushed stainless steel handles",
       "Marshalls charcoal block paving driveway with light grey perimeter kerbs",
       "Full exterior porcelain patio terrace with timber panel acoustic privacy fencing"
     ],
@@ -108,7 +108,7 @@ window.ANGEL_PROJECTS = [
       },
       {
         "path": "assets/projects/project-1-new-build/img-16.jpg",
-        "caption": "Interior perspective showing architectural room proportions"
+        "caption": "Interior perspective showing structural room proportions"
       },
       {
         "path": "assets/projects/project-1-new-build/img-17.jpg",
@@ -135,7 +135,7 @@ window.ANGEL_PROJECTS = [
   {
     "id": "orpington-marble-extension",
     "title": "The Hollingworth Grand Living & Kitchen Extension",
-    "subtitle": "Expansive open-plan architectural extension with Carrara marble porcelain & twin lanterns",
+    "subtitle": "Expansive open-plan living & kitchen extension with Carrara marble porcelain & twin lanterns",
     "category": "extensions",
     "categoryName": "House Extension",
     "location": "Hollingworth Road, Orpington BR5",
@@ -161,14 +161,14 @@ window.ANGEL_PROJECTS = [
         "value": "Twin Roof Lanterns"
       }
     ],
-    "overview": "An expansive architectural rear ground floor extension transforming a traditional family home into a high-end, light-flooded entertaining pavilion. Features oversized polished Carrara marble floor tiles throughout, a custom monolithic kitchen island with breakfast bar, twin architectural lantern skylights, full-width minimalist black aluminium sliding glass doors, and evening ambient terrace lighting.",
+    "overview": "An expansive rear ground-floor structural extension transforming a traditional family home into a high-end, light-flooded entertaining pavilion. Features oversized polished Carrara marble floor tiles throughout, a custom monolithic kitchen island with breakfast bar, twin roof lanterns, full-width minimalist black aluminium sliding glass doors, and evening ambient terrace lighting.",
     "scope": [
       "Excavation, structural steel frame installation, and floor screed",
-      "Twin thermally-broken aluminium architectural roof lanterns with self-cleaning glass",
+      "Twin thermally-broken aluminium roof lanterns with self-cleaning glass",
       "Full-width slim-profile black aluminium sliding glass doors to garden terrace",
       "Large-format 1200x600mm polished Carrara marble porcelain floor tiles",
       "Custom graphite kitchen island with waterfall marble worktop & amber glass drop pendants",
-      "Zoned smart ambient LED downlighting, shadow gap cornicing, and architectural vertical radiator",
+      "Zoned smart ambient LED downlighting, shadow gap cornicing, and vertical designer radiator",
       "Crittall-inspired glazed interior doors connecting the entrance foyer to the living area"
     ],
     "testimonial": {
@@ -243,7 +243,7 @@ window.ANGEL_PROJECTS = [
       },
       {
         "path": "assets/projects/project-2-orpington-marble-extension/img-17.jpg",
-        "caption": "Twin architectural roof lanterns flooding the living zone with natural daylight"
+        "caption": "Twin roof lanterns flooding the living zone with natural daylight"
       },
       {
         "path": "assets/projects/project-2-orpington-marble-extension/img-18.jpg",
@@ -356,7 +356,7 @@ window.ANGEL_PROJECTS = [
         "value": "Silicone K-Rend"
       }
     ],
-    "overview": "A complete architectural transformation of a residential property comprising a ground-floor rear kitchen extension and a large rear dormer loft conversion. Includes a bespoke chef kitchen with large island, integrated wine cooler, roof lantern, bifold doors, master bedroom with en-suite walk-in wetroom, and crisp white silicone render with contrasting dark anthracite windows.",
+    "overview": "A complete structural extension and master refurbishment of a residential property comprising a ground-floor rear kitchen extension and a large rear dormer loft conversion. Includes a bespoke chef kitchen with large island, integrated wine cooler, roof lantern, bifold doors, master bedroom with en-suite walk-in wetroom, and crisp white silicone render with contrasting dark anthracite windows.",
     "scope": [
       "Full rear wraparound extension with structural RSJ steel beam knock-through",
       "Rear dormer loft conversion with anthracite clad exterior and Velux front rooflights",
@@ -837,10 +837,10 @@ window.ANGEL_PROJECTS = [
         "value": "Celotex PIR 120mm"
       }
     ],
-    "overview": "A light-filled attic loft conversion at Lodge Close, Orpington. A central architectural feature is the new bespoke hardwood staircase positioned beneath an overhead skylight lantern well, illuminating the stairwell down to the ground floor. Finished with tempered glass balustrade infill panels, light oak flooring, and low-energy LED spotlights.",
+    "overview": "A light-filled attic loft conversion at Lodge Close, Orpington. A central focal feature is the new bespoke hardwood staircase positioned beneath an overhead skylight lantern well, illuminating the stairwell down to the ground floor. Finished with tempered glass balustrade infill panels, light oak flooring, and low-energy LED spotlights.",
     "scope": [
       "Structural steel support beams and floor joist strengthening",
-      "Construction of light shaft under architectural flat-roof glass lantern",
+      "Construction of light shaft under flat-roof glass lantern",
       "Bespoke winder staircase manufacture and installation with hardwood handrails",
       "Toughened clear glass balustrade panels for seamless sightlines and light flow",
       "120mm Celotex high-performance PIR thermal insulation ensuring year-round warmth",
@@ -858,7 +858,7 @@ window.ANGEL_PROJECTS = [
       },
       {
         "path": "assets/projects/project-8-lodgeclose-loft-conversion/img-02.jpg",
-        "caption": "Warm oak timber flooring and crisp architectural architraves"
+        "caption": "Warm oak timber flooring and crisp timber architraves"
       },
       {
         "path": "assets/projects/project-8-lodgeclose-loft-conversion/img-03.jpg",
@@ -1031,7 +1031,7 @@ window.ANGEL_PROJECTS = [
   {
     "id": "interior-refurbishment",
     "title": "Greenwich & Chislehurst Turnkey Refurbishments",
-    "subtitle": "Classic shaker kitchens, solid grooved oak joinery, architectural arches & stair runners",
+    "subtitle": "Classic shaker kitchens, solid grooved oak joinery, bespoke archways & stair runners",
     "category": "renovations",
     "categoryName": "Full House Renovation",
     "location": "Colepits Wood Rd (SE9) & Lower Camden (BR7)",
@@ -1064,7 +1064,7 @@ window.ANGEL_PROJECTS = [
       "Solid oak grooved internal doors with contemporary brushed satin lever handles",
       "Restoration and formation of traditional curved hallway archway openings",
       "Fitting of deep charcoal luxury carpet runners with gold-tone threshold bars",
-      "Full electrical rewiring, USB fast-charge sockets, and architectural LED lighting"
+      "Full electrical rewiring, USB fast-charge sockets, and perimeter LED downlighting"
     ],
     "testimonial": {
       "quote": "We gave Angel Construction the keys and went away on holiday. We returned to a home that felt brand new. Their attention to detail on the doors, archways, and kitchen was remarkable.",
@@ -1074,27 +1074,27 @@ window.ANGEL_PROJECTS = [
     "images": [
       {
         "path": "assets/projects/project-10-interior-refurbishment/img-01.jpg",
-        "caption": "Internal refurbishment & architectural joinery (View 1)"
+        "caption": "Internal refurbishment & bespoke joinery (View 1)"
       },
       {
         "path": "assets/projects/project-10-interior-refurbishment/img-02.jpg",
-        "caption": "Internal refurbishment & architectural joinery (View 2)"
+        "caption": "Internal refurbishment & bespoke joinery (View 2)"
       },
       {
         "path": "assets/projects/project-10-interior-refurbishment/img-03.jpg",
-        "caption": "Internal refurbishment & architectural joinery (View 3)"
+        "caption": "Internal refurbishment & bespoke joinery (View 3)"
       },
       {
         "path": "assets/projects/project-10-interior-refurbishment/img-04.jpg",
-        "caption": "Internal refurbishment & architectural joinery (View 4)"
+        "caption": "Internal refurbishment & bespoke joinery (View 4)"
       },
       {
         "path": "assets/projects/project-10-interior-refurbishment/img-05.jpg",
-        "caption": "Internal refurbishment & architectural joinery (View 5)"
+        "caption": "Internal refurbishment & bespoke joinery (View 5)"
       },
       {
         "path": "assets/projects/project-10-interior-refurbishment/img-06.jpg",
-        "caption": "Internal refurbishment & architectural joinery (View 6)"
+        "caption": "Internal refurbishment & bespoke joinery (View 6)"
       },
       {
         "path": "assets/projects/project-10-interior-refurbishment/img-07.jpg",
@@ -1102,35 +1102,35 @@ window.ANGEL_PROJECTS = [
       },
       {
         "path": "assets/projects/project-10-interior-refurbishment/img-08.jpg",
-        "caption": "Internal refurbishment & architectural joinery (View 8)"
+        "caption": "Internal refurbishment & bespoke joinery (View 8)"
       },
       {
         "path": "assets/projects/project-10-interior-refurbishment/img-09.jpg",
-        "caption": "Internal refurbishment & architectural joinery (View 9)"
+        "caption": "Internal refurbishment & bespoke joinery (View 9)"
       },
       {
         "path": "assets/projects/project-10-interior-refurbishment/img-10.jpg",
-        "caption": "Internal refurbishment & architectural joinery (View 10)"
+        "caption": "Internal refurbishment & bespoke joinery (View 10)"
       },
       {
         "path": "assets/projects/project-10-interior-refurbishment/img-11.jpg",
-        "caption": "Internal refurbishment & architectural joinery (View 11)"
+        "caption": "Internal refurbishment & bespoke joinery (View 11)"
       },
       {
         "path": "assets/projects/project-10-interior-refurbishment/img-12.jpg",
-        "caption": "Internal refurbishment & architectural joinery (View 12)"
+        "caption": "Internal refurbishment & bespoke joinery (View 12)"
       },
       {
         "path": "assets/projects/project-10-interior-refurbishment/img-13.jpg",
-        "caption": "Internal refurbishment & architectural joinery (View 13)"
+        "caption": "Internal refurbishment & bespoke joinery (View 13)"
       },
       {
         "path": "assets/projects/project-10-interior-refurbishment/img-14.jpg",
-        "caption": "Internal refurbishment & architectural joinery (View 14)"
+        "caption": "Internal refurbishment & bespoke joinery (View 14)"
       },
       {
         "path": "assets/projects/project-10-interior-refurbishment/img-15.jpg",
-        "caption": "Internal refurbishment & architectural joinery (View 15)"
+        "caption": "Internal refurbishment & bespoke joinery (View 15)"
       },
       {
         "path": "assets/projects/project-10-interior-refurbishment/img-16.jpg",
@@ -1138,23 +1138,23 @@ window.ANGEL_PROJECTS = [
       },
       {
         "path": "assets/projects/project-10-interior-refurbishment/img-17.jpg",
-        "caption": "Internal refurbishment & architectural joinery (View 17)"
+        "caption": "Internal refurbishment & bespoke joinery (View 17)"
       },
       {
         "path": "assets/projects/project-10-interior-refurbishment/img-18.jpg",
-        "caption": "Internal refurbishment & architectural joinery (View 18)"
+        "caption": "Internal refurbishment & bespoke joinery (View 18)"
       },
       {
         "path": "assets/projects/project-10-interior-refurbishment/img-19.jpg",
-        "caption": "Internal refurbishment & architectural joinery (View 19)"
+        "caption": "Internal refurbishment & bespoke joinery (View 19)"
       },
       {
         "path": "assets/projects/project-10-interior-refurbishment/img-20.jpg",
-        "caption": "Internal refurbishment & architectural joinery (View 20)"
+        "caption": "Internal refurbishment & bespoke joinery (View 20)"
       },
       {
         "path": "assets/projects/project-10-interior-refurbishment/img-21.jpg",
-        "caption": "Internal refurbishment & architectural joinery (View 21)"
+        "caption": "Internal refurbishment & bespoke joinery (View 21)"
       },
       {
         "path": "assets/projects/project-10-interior-refurbishment/img-22.jpg",
@@ -1162,15 +1162,15 @@ window.ANGEL_PROJECTS = [
       },
       {
         "path": "assets/projects/project-10-interior-refurbishment/img-23.jpg",
-        "caption": "Internal refurbishment & architectural joinery (View 23)"
+        "caption": "Internal refurbishment & bespoke joinery (View 23)"
       },
       {
         "path": "assets/projects/project-10-interior-refurbishment/img-24.jpg",
-        "caption": "Internal refurbishment & architectural joinery (View 24)"
+        "caption": "Internal refurbishment & bespoke joinery (View 24)"
       },
       {
         "path": "assets/projects/project-10-interior-refurbishment/img-25.jpg",
-        "caption": "Internal refurbishment & architectural joinery (View 25)"
+        "caption": "Internal refurbishment & bespoke joinery (View 25)"
       },
       {
         "path": "assets/projects/project-10-interior-refurbishment/img-26.jpg",
@@ -1178,23 +1178,23 @@ window.ANGEL_PROJECTS = [
       },
       {
         "path": "assets/projects/project-10-interior-refurbishment/img-27.jpg",
-        "caption": "Internal refurbishment & architectural joinery (View 27)"
+        "caption": "Internal refurbishment & bespoke joinery (View 27)"
       },
       {
         "path": "assets/projects/project-10-interior-refurbishment/img-28.jpg",
-        "caption": "Internal refurbishment & architectural joinery (View 28)"
+        "caption": "Internal refurbishment & bespoke joinery (View 28)"
       },
       {
         "path": "assets/projects/project-10-interior-refurbishment/img-29.jpg",
-        "caption": "Internal refurbishment & architectural joinery (View 29)"
+        "caption": "Internal refurbishment & bespoke joinery (View 29)"
       },
       {
         "path": "assets/projects/project-10-interior-refurbishment/img-30.jpg",
-        "caption": "Internal refurbishment & architectural joinery (View 30)"
+        "caption": "Internal refurbishment & bespoke joinery (View 30)"
       },
       {
         "path": "assets/projects/project-10-interior-refurbishment/img-31.jpg",
-        "caption": "Internal refurbishment & architectural joinery (View 31)"
+        "caption": "Internal refurbishment & bespoke joinery (View 31)"
       }
     ]
   }
