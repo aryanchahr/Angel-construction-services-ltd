@@ -59,18 +59,17 @@
       <!-- Streamlined Clean Navigation -->
       <nav class="main-nav" aria-label="Main Navigation">
         <ul class="nav-list">
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#services" class="nav-link">Services</a></li>
-          <li><a href="#why-us" class="nav-link">Why Us</a></li>
-          <li><a href="#process" class="nav-link">Our Process</a></li>
-          <li><a href="#calculator" class="nav-link">Cost Guide</a></li>
-          <li><a href="#reviews" class="nav-link">Reviews</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="index.html#calculator" class="nav-link">Cost Guide</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
 
         <!-- Mobile Drawer Action Buttons (Visible only inside mobile drawer) -->
         <div class="mobile-nav-actions">
-          <a href="#contact" class="drawer-btn-quote">
+          <a href="contact.html" class="drawer-btn-quote">
             <span>Request Free Quote</span>
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
           </a>
@@ -105,7 +104,7 @@
         </a>
 
         <!-- Luxury Consultation CTA -->
-        <a href="#contact" class="nav-cta-btn">
+        <a href="contact.html" class="nav-cta-btn">
           <span>Free Quote</span>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
         </a>
@@ -314,6 +313,14 @@
       <div class="projects-grid" id="projectsGrid">
         <!-- Rendered dynamically by script.js from window.ANGEL_PROJECTS -->
       </div>
+
+      <!-- Explore All Projects Button -->
+      <div style="text-align: center; margin-top: 3.5rem;">
+        <a href="projects.html" class="cta-btn-gold" style="padding: 1rem 2.25rem; font-size: 1rem; display: inline-flex; align-items: center; gap: 0.6rem;">
+          <span>View All 10 Projects & Full Galleries (184 Photos)</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -450,6 +457,14 @@
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
           </a>
         </article>
+      </div>
+
+      <!-- Explore Detailed Services Button -->
+      <div style="text-align: center; margin-top: 3.5rem;">
+        <a href="services.html" class="btn-hero-secondary" style="padding: 0.95rem 2rem; font-size: 0.95rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+          <span>Explore All 7 Detailed Building Services & Specifications</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
       </div>
     </div>
   </section>
@@ -885,24 +900,24 @@
         <div class="footer-col">
           <h5>Core Services</h5>
           <ul class="footer-nav-list">
-            <li><a href="#services">House Extensions</a></li>
-            <li><a href="#services">Loft Conversions</a></li>
-            <li><a href="#services">New Build Developments</a></li>
-            <li><a href="#services">Structural Steelwork & RSJs</a></li>
-            <li><a href="#services">Luxury Bathrooms & Wetrooms</a></li>
-            <li><a href="#services">Driveways & Porch Extensions</a></li>
+            <li><a href="services.html#extensions">House Extensions</a></li>
+            <li><a href="services.html#lofts">Loft Conversions</a></li>
+            <li><a href="services.html#new-builds">New Build Developments</a></li>
+            <li><a href="services.html#structural">Structural Steelwork & RSJs</a></li>
+            <li><a href="services.html#bathrooms">Luxury Bathrooms & Wetrooms</a></li>
+            <li><a href="services.html#renovations">Full Renovations & Refurbishments</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
-          <h5>Projects Divided Project-Wise</h5>
+          <h5>Featured Case Studies</h5>
           <ul class="footer-nav-list">
-            <li><a href="#projects" onclick="renderProjects('new-build')">Bexley Detached New Build</a></li>
-            <li><a href="#projects" onclick="renderProjects('extensions')">Orpington Marble Extension</a></li>
-            <li><a href="#projects" onclick="renderProjects('extensions')">Bromley Extension & Loft</a></li>
-            <li><a href="#projects" onclick="renderProjects('structural')">Chislehurst Steel Portal Frame</a></li>
-            <li><a href="#projects" onclick="renderProjects('bathrooms')">Luxury Bathroom Suites</a></li>
-            <li><a href="#projects" onclick="renderProjects('exterior')">Gable Porch & Driveway</a></li>
+            <li><a href="projects.html?project=bexley-new-build">Bexley Detached New Build</a></li>
+            <li><a href="projects.html?project=orpington-marble-extension">Orpington Marble Extension</a></li>
+            <li><a href="projects.html?project=bromley-extension-loft">Bromley Extension & Loft</a></li>
+            <li><a href="projects.html?project=chislehurst-steelwork">Chislehurst Steel Portal Frame</a></li>
+            <li><a href="projects.html?project=luxury-bathrooms">Luxury Bathroom Suites</a></li>
+            <li><a href="projects.html">View All 10 Projects (184 Photos) →</a></li>
           </ul>
         </div>
 
@@ -924,7 +939,13 @@
 
       <div class="footer-bottom">
         <p>© 2026 Angel Construction Services Ltd. All rights reserved. Registered in England & Wales #09506499.</p>
-        <p>General Building Contractors • Extensions • Loft Conversions • Turnkey New Builds</p>
+        <div class="footer-nav-bottom" style="display:flex;gap:1.25rem;flex-wrap:wrap;font-size:0.85rem;">
+          <a href="index.html" style="color:#cbd5e1;text-decoration:none;">Home</a>
+          <a href="about.html" style="color:#cbd5e1;text-decoration:none;">About Us</a>
+          <a href="services.html" style="color:#cbd5e1;text-decoration:none;">Services</a>
+          <a href="projects.html" style="color:#cbd5e1;text-decoration:none;">Projects</a>
+          <a href="contact.html" style="color:#cbd5e1;text-decoration:none;">Contact</a>
+        </div>
       </div>
     </div>
   </footer>

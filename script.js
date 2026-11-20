@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initContactForm();
   initNavbarScroll();
+  initFaqAccordion();
 });
 
 /* ==========================================================================
@@ -54,7 +55,27 @@ function initProjects() {
   if (!window.ANGEL_PROJECTS || !grid) return;
   activeProjectList = window.ANGEL_PROJECTS;
 
-  renderProjects('all');
+  // Check URL query parameters for cat or project
+  const urlParams = new URLSearchParams(window.location.search);
+  const catParam = urlParams.get('cat');
+  const projParam = urlParams.get('project');
+
+  if (catParam) {
+    const targetBtn = document.querySelector(`.filter-btn[data-filter="${catParam}"]`);
+    if (targetBtn) {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      targetBtn.classList.add('active');
+    }
+    renderProjects(catParam);
+  } else {
+    renderProjects('all');
+  }
+
+  if (projParam) {
+    setTimeout(() => {
+      openProjectModal(projParam);
+    }, 200);
+  }
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -528,4 +549,30 @@ function escapeHtml(str) {
             .replace(/>/g, '&gt;')
             .replace(/"/g, '&quot;')
             .replace(/'/g, '&#039;');
+}
+
+/* ==========================================================================
+   7. FAQ ACCORDION (FOR SERVICES / ABOUT PAGES)
+   ========================================================================== */
+function initFaqAccordion() {
+  const faqItems = document.querySelectorAll('.faq-item');
+  if (!faqItems.length) return;
+
+  faqItems.forEach(item => {
+    const questionBtn = item.querySelector('.faq-question');
+    if (!questionBtn) return;
+
+    questionBtn.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      // Optional: close other items
+      faqItems.forEach(other => {
+        if (other !== item) other.classList.remove('open');
+      });
+      if (isOpen) {
+        item.classList.remove('open');
+      } else {
+        item.classList.add('open');
+      }
+    });
+  });
 }
