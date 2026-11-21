@@ -92,13 +92,17 @@ function initProjects() {
 
 function renderProjects(category) {
   const grid = document.getElementById('projectsGrid');
+  if (!grid) return;
   grid.innerHTML = '';
 
   const filtered = category === 'all' 
     ? activeProjectList 
     : activeProjectList.filter(p => p.category === category);
 
-  filtered.forEach(proj => {
+  const limit = parseInt(grid.dataset.limit, 10) || 0;
+  const toRender = limit > 0 ? filtered.slice(0, limit) : filtered;
+
+  toRender.forEach(proj => {
     const card = document.createElement('article');
     card.className = 'project-card';
     card.dataset.id = proj.id;
