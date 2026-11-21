@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initCalculator();
   initMobileMenu();
   initContactForm();
+  initArchitectureForm();
   initNavbarScroll();
   initFaqAccordion();
 });
@@ -479,6 +480,45 @@ function initContactForm() {
           <strong>Thank you!</strong> Your project inquiry has been received. Our senior project surveyor will contact you within 24 hours to arrange your free site survey.
           <br><br>
           For urgent requests, please contact our director directly at <a href="tel:+447931931035" style="color:var(--accent-gold);font-weight:700;">+44 7931 931035</a>.
+        `;
+      }
+      form.reset();
+      setTimeout(() => {
+        btn.innerHTML = originalText;
+        btn.style.background = '';
+      }, 5000);
+    }, 1200);
+  });
+}
+
+/* ==========================================================================
+   6B. ARCHITECTURE & PLANNING BOOKING FORM
+   ========================================================================== */
+function initArchitectureForm() {
+  const form = document.getElementById('archBookingForm');
+  const alertBox = document.getElementById('archFormAlert');
+
+  if (!form) return;
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const btn = form.querySelector('.btn-arch-submit') || form.querySelector('button[type="submit"]');
+    const originalText = btn.innerHTML;
+
+    btn.disabled = true;
+    btn.innerHTML = `Sending Consultation Request...`;
+
+    setTimeout(() => {
+      btn.disabled = false;
+      btn.innerHTML = `Consultation Request Sent!`;
+      btn.style.background = '#10b981';
+
+      if (alertBox) {
+        alertBox.style.display = 'block';
+        alertBox.innerHTML = `
+          <strong>Thank you!</strong> Your architectural design and planning inquiry has been sent to our associate design studio. A senior architectural project coordinator will review your property requirements and contact you within 24 hours.
+          <br><br>
+          For urgent CAD plotting, printing, or planning deadlines, call our direct line at <a href="tel:+447931931035" style="color:var(--accent-gold);font-weight:700;">+44 7931 931035</a>.
         `;
       }
       form.reset();
