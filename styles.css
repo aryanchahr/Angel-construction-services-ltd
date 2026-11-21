@@ -1639,7 +1639,7 @@ button, input, select, textarea {
 .why-feature-text h4 {
   font-size: 1.1rem;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--text-main);
   margin-bottom: 0.35rem;
 }
 
@@ -1651,17 +1651,17 @@ button, input, select, textarea {
 
 /* Comparison Box */
 .comparison-card {
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-card);
   border: 1px solid var(--border-dark);
   border-radius: var(--radius-xl);
   padding: 2.5rem;
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-md);
 }
 
 .comparison-card h3 {
   font-size: 1.4rem;
   font-weight: 800;
-  color: #ffffff;
+  color: var(--text-main);
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -1682,19 +1682,21 @@ button, input, select, textarea {
 }
 
 .comparison-table th.highlight {
-  color: var(--accent-gold);
+  color: var(--accent-gold-dark);
+  font-weight: 800;
 }
 
 .comparison-table td {
   padding: 1rem;
   font-size: 0.88rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid var(--border-dark);
+  color: var(--text-main);
 }
 
 .comparison-table td.angel-col {
-  color: #ffffff;
-  font-weight: 600;
-  background: var(--accent-gold-subtle);
+  color: #047857;
+  font-weight: 700;
+  background: rgba(245, 158, 11, 0.1);
 }
 
 .comparison-table td.other-col {
@@ -3318,17 +3320,87 @@ body {
   background-color: #ffffff;
 }
 
+.why-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.why-icon-bubble {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  color: #d97706;
+}
+
+.why-feature-text h4 {
+  color: #0f172a !important;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.why-feature-text p {
+  color: #475569 !important;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
 .why-feature-card {
   background: #f8fafc;
   border: 1px solid #e2e8f0;
 }
 
 .why-feature-card h4 {
-  color: #0f172a;
+  color: #0f172a !important;
 }
 
 .why-feature-card p {
-  color: #475569;
+  color: #475569 !important;
+}
+
+/* Comparison Box in Light Mode */
+.comparison-card {
+  background-color: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: var(--radius-xl) !important;
+  padding: 2.5rem !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
+}
+
+.comparison-card h3 {
+  color: #0f172a !important;
+  font-size: 1.4rem !important;
+  font-weight: 800 !important;
+  margin-bottom: 1.5rem !important;
+  text-align: center !important;
+}
+
+.comparison-table th {
+  color: #64748b !important;
+  border-bottom: 2px solid #e2e8f0 !important;
+  padding: 0.85rem 1rem !important;
+  font-size: 0.8rem !important;
+}
+
+.comparison-table th.highlight {
+  color: #b45309 !important;
+  font-weight: 800 !important;
+}
+
+.comparison-table td {
+  border-bottom: 1px solid #f1f5f9 !important;
+  color: #334155 !important;
+  padding: 1rem !important;
+}
+
+.comparison-table td.angel-col {
+  color: #047857 !important;
+  font-weight: 700 !important;
+  background: rgba(245, 158, 11, 0.08) !important;
+}
+
+.comparison-table td.other-col {
+  color: #64748b !important;
 }
 
 .why-stat-box {
@@ -3351,10 +3423,31 @@ body {
   border-bottom: 1px solid #e2e8f0;
 }
 
+.process-step-card,
 .process-step-item {
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: var(--radius-lg) !important;
+  padding: 2.25rem 1.75rem !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03) !important;
+}
+
+.step-num-pill {
+  color: rgba(217, 119, 6, 0.25) !important;
+  font-size: 2.5rem !important;
+  font-weight: 900 !important;
+}
+
+.step-title {
+  color: #0f172a !important;
+  font-size: 1.15rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 0.65rem !important;
+}
+
+.step-desc {
+  color: #475569 !important;
+  font-size: 0.875rem !important;
 }
 
 .step-number {
@@ -3364,11 +3457,11 @@ body {
 }
 
 .process-step-item h4 {
-  color: #0f172a;
+  color: #0f172a !important;
 }
 
 .process-step-item p {
-  color: #475569;
+  color: #475569 !important;
 }
 
 /* 10. Calculator */
@@ -3520,17 +3613,19 @@ body {
 
 .form-input,
 .form-select,
-.form-textarea {
-  background: #ffffff;
-  border: 1px solid #cbd5e1;
-  color: #0f172a;
+.form-textarea,
+.form-control {
+  background: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #0f172a !important;
 }
 
 .form-input:focus,
 .form-select:focus,
-.form-textarea:focus {
-  border-color: #f59e0b;
-  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.18);
+.form-textarea:focus,
+.form-control:focus {
+  border-color: #f59e0b !important;
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.18) !important;
 }
 
 /* 14. Modals */
@@ -4233,6 +4328,235 @@ body {
   }
   .quick-stat-box strong {
     font-size: 1.3rem;
+  }
+}
+
+/* ==========================================================================
+   ASSOCIATE ARCHITECTURE, DESIGN & PRINT STYLES
+   ========================================================================== */
+.arch-partner-section {
+  background-color: #ffffff;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.arch-layout-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+.arch-badge-partner {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 9999px;
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  color: #b45309;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem;
+}
+
+.arch-partner-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-xl);
+  padding: 2.25rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.arch-sister-highlight {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #ffffff;
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  margin-top: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.15);
+}
+
+.arch-sister-highlight h4 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.35rem;
+}
+
+.arch-sister-highlight p {
+  font-size: 0.88rem;
+  color: #94a3b8;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.btn-external-website {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.4rem;
+  background: #f59e0b;
+  color: #0b0d10;
+  font-weight: 800;
+  font-size: 0.88rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn-external-website:hover {
+  background: #fbbf24;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.35);
+  color: #000000;
+}
+
+.arch-capabilities-mini {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.arch-cap-pill {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.arch-cap-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 6px;
+  background: rgba(245, 158, 11, 0.12);
+  color: #d97706;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.arch-cap-info h5 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.2rem;
+}
+
+.arch-cap-info p {
+  font-size: 0.78rem;
+  color: #64748b;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.arch-booking-box {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-xl);
+  padding: 2.5rem;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.08);
+}
+
+.arch-booking-box h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 0.35rem;
+}
+
+.arch-booking-box p.form-sub {
+  font-size: 0.88rem;
+  color: #64748b;
+  margin-bottom: 1.75rem;
+}
+
+/* Architecture Page Grid */
+.arch-grid-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.arch-service-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-lg);
+  padding: 2.25rem;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.arch-service-card:hover {
+  transform: translateY(-4px);
+  border-color: #f59e0b;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+}
+
+.arch-service-card h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 1.25rem 0 0.65rem 0;
+}
+
+.arch-service-card p {
+  font-size: 0.9rem;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.arch-tag-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: auto;
+}
+
+.arch-tag-pill {
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: #f1f5f9;
+  color: #334155;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+}
+
+@media (max-width: 992px) {
+  .arch-layout-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .arch-grid-cards {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .arch-capabilities-mini {
+    grid-template-columns: 1fr;
+  }
+  .arch-booking-box {
+    padding: 1.75rem 1.25rem;
+  }
+  .arch-partner-card {
+    padding: 1.75rem 1.25rem;
   }
 }
 
